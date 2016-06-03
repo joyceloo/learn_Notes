@@ -1,0 +1,24 @@
+@import "style1.css";
+@import "base0.css";
+@import "a.css";
+
+.spot_cate>ul{
+    list-style: none;
+    margin: 0 -20px;
+    padding: 0;
+}
+.spot_cate ul>li{
+    display: list-item;
+    text-align: center;
+}
+.spot_cate>ul>li>a{
+    padding-top: 0;
+    display: block;
+    color: #4174c5;
+    padding: 8px 20px;
+    -webkit-transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+}
+.spot_cate>ul>li>a:hover{
+	background: rgba(0,0,0,0.4);
+}

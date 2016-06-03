@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>郊游中国</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lmj.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" style="background: #f1f2f3;">
+<!--导航-->
+<section style="background: #fff;">
+    <div class="row" style="padding: 10px 30px;">
+        <div class="col-md-2">
+            <img src="{% static 'travel/images/logo.png' %}" alt="" style="width: 160px;height: 50px;">
+        </div>
+        <div class="col-md-3" style="border-left: 2px solid gainsboro">
+            <div class="headerTop">
+                {% block area%}
+                <h3><span class="blue-color" style="padding-right: 10px;"><i class="fa fa-map-marker"></i></span>北京市</h3>
+                {% endblock %}
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="input-group" style="margin-top: 10px;">
+                <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="px_20"></div>
+    <!--导航-->
+    {% block nav%}
+    <div style="background: #efcfcf;">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">景点</a></li>
+            <li><a href="#">美食</a></li>
+            <li><a href="#">住宿</a></li>
+            <li><a href="#">购物</a></li>
+            <li><a href="#">娱乐休闲</a></li>
+            <li><a href="#">点评</a></li>
+            <li><a href="#">游记</a></li>
+            <li><a href="#">问答</a></li>
+            <li><a href="#">更多</a></li>
+        </ul>
+    </div>
+    {% endblock %}
+    <div class="px_20"></div>
+    <!--地区简介-->
+    {% block area_1%}{% endblock %}
+</section>
+<div style="margin-bottom: 30px;"></div>
+{% block main %}{% endblock %}
+<!---->
+<footer style="background: #fff;padding-top: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <p>Copyright © 北京邮电大学<a href="#" target="_blank" title="#">教二 - 320</a></p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

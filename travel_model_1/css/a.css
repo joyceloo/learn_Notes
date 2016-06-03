@@ -1,0 +1,288 @@
+.em-color{
+    color: #f90;
+}
+
+.green-color{
+    color: #66cc66;
+}
+.blue-color{
+    color: #00aeff;
+}
+h3{
+    font-size: 20px;
+}
+.px_20{
+    margin-bottom: 20px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul>li{
+    display: inline-block;
+    margin-right: 10px;
+    color: gray;
+}
+/*标题*/
+.sec-title {
+    padding: 8px 0px 10px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+.sec-title span {
+    font-size: 40px;
+}
+/*标签tag*/
+aside.widget {
+    margin-bottom: 25px;
+}
+.widget-title > h3 {
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 0;
+    position: relative;
+}
+.border-tag {
+    padding: 15px;
+    border: 1px solid gainsboro;
+}
+
+
+a.tag, a.tag:focus, a.tag:hover {
+    text-decoration: none;
+    outline: 0;
+    color: #00AEFF;
+}
+a.tag {
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+}
+.widget-content .tag {
+    background-color: #fff;
+    color: black;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 5px 13px;
+}
+.you_title,.chi_title{
+    height: 35px;
+    position: relative;
+}
+.you_title{
+    border-bottom: 2px solid #00aeff;
+}
+.chi_title{
+    border-bottom: 2px solid #00aeff;
+}
+.you_title h3,.chi_title h3{
+    width: 180px;
+    padding-left: 10px;
+    float: left;
+    margin: 0;
+}
+.you_title span ,.chi_title span{
+    display: block;
+    padding-top: 8px;
+    float: right;
+    font-size: 10px;
+    color: #666;
+}
+.you span,.chi span{
+    font-size: 10px;
+    font-weight: 200;
+}
+.you span>a ,.chi_title span>a{
+    font-size: 10px;
+    color: #666;
+}
+.go{
+    padding: 5px;
+    background: #f90;
+    color: #fff;
+    font-size: 10px;
+}
+.go:hover {
+    background: #66cc66;
+    text-decoration: none;
+}
+
+.fl {
+    width: 40%;
+    float: left;
+    position: relative;
+}
+.fl>img {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+.fr {
+    width: 55%;
+    float: left;
+    position: relative;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.hot {
+    float: right;
+    font-size: 20px;
+    color: #fb6e14;
+}
+.fr>div>span {
+    padding: 2px;
+    font-weight: 500;
+    font-size: 10px;
+}
+.dianping {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+/**/
+/*--albums--*/
+.albums {
+    padding: 4em 0;
+}
+
+.music-info {
+    margin-top: 3em;
+}
+
+.music-grids {
+    padding-left: 0;
+}
+
+.music-grids img{
+    width: 100%;
+}
+.music-grids p {
+    font-size: 0.8em;
+    color: #fff;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+/* Common style */
+.music-grids h4 {
+    font-size: 15px;
+    font-weight:200;
+    color: #fff;
+    font-family: 'Jockey One', sans-serif;
+}
+.music-grids figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    width:100%;
+}
+.music-grids figure img {
+    position: relative;
+    display: block;
+}
+
+.music-grids figure figcaption {
+    padding: 2em;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.music-grids figure figcaption::before,
+.music-grids figure figcaption::after {
+    pointer-events: none;
+}
+
+.music-grids figure figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+figure.effect-bubba {
+    background-color:rgba(0,0,0,0.9);
+}
+figure.effect-bubba:hover img {
+    opacity: 0.3;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+
+figure.effect-bubba h4 {
+    padding-top: 10%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    opacity:0;
+}
+
+figure.effect-bubba p {
+    padding: 10px 2em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-bubba:hover h4,
+figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.bac-con {
+    position: absolute;
+    top: 3em;
+    left: -2px;
+    color: #fff;
+}
+.bac-em {
+    background: rgba(252,120,14,0.8);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10%;
+    font-size: 15px;
+}
+/**/

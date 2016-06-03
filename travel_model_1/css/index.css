@@ -1,0 +1,23 @@
+.logo{
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+}
+.logo>img{
+    display:inline-block;
+    height: 50px;
+    width: 300px;
+}
+.top-nav>li>a{
+    font-size: 10px;
+    padding: 2px 10px;
+}
+/* footer section */
+footer {
+    color: #f9f9f9;
+    text-align: center;
+    padding-top: 140px;
+    position: absolute;
+    margin-top: 400px;
+    padding-bottom: 100px;
+}
