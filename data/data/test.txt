@@ -1,0 +1,16 @@
+入口网址分析：
+http://lvyou.baidu.com/destination/ajax/jingdian?format=ajax&cid=0&playid=0&seasonid=5&surl=beijing&pn=1&rn=18
+surl代表搜索地址
+pn为显显示的页码（1,2,3,4.。。)
+rn为每页显示的条数。
+作用:返回包含景点信息的json数据（sid surl sname）
+
+step2:
+利用step1中的数据进行url拼接:
+1、
+url='http://lvyou.baidu.com/user/ajax/remark/getsceneremarklist?xid=6208c401f1153f0fd41f74fe&score=0&pn=0&rn=15&style=hot&format=ajax&flag=1&t=1460946948133'  -----(网址返回json格式，包含该景surl的点评数据信息)
+：xid为景点的sid pn为页码(0,0+15,0+15+15,...)  rn为每页显示的条数    
+2、游记url
+url='http://lvyou.baidu.com/search/ajax/search?format=ajax&word=%E6%95%85%E5%AE%AB&pn=1&surl=gugong&rn=10&t=1460947281231'
+（该url包含该景点游记的数据信息 目的：获取游记的Loc-->游记的网址）
+：word为sname  pn为页码（0,0+10,0+10+10,....） surl为surl rn为每页显示条目。

@@ -1,0 +1,5 @@
+
+sname:午门	sid:e82ddb7d6111526fb820fd27	surl:wumen
+sname:东华门	sid:46ab733fb2cc70c0c1ec2e20	surl:donghuamen
+sname:太和门三大殿	sid:761fb9d414ff762fcb8fda0f	surl:taihemensandadian
+sname:延寿堂	sid:4ce1526fb820db6e9728fb03	surl:yanshoutang
